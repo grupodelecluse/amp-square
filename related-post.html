@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Post relacionados Amp Blogger</title>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<style>
+body {
+  background-color:transparent;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+}
+iframe{border:0;}
+#fw-feed-items .fw-feed-item-image {
+    margin: 0px;
+    padding: 0;
+    width: 100% !important;
+    height: 140px !important;
+    overflow: hidden;
+    
+}
+#fw-feed-items .fw-feed-item-image-module {
+    margin: 0 0 0 5px;
+    padding: 0;
+    float: none !important;
+    text-align: -webkit-center !important;
+}
+	
+</style>	
+<style type="text/css">
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {border: 0;font-family: inherit;font-size: 100%;font-style: inherit;font-weight: inherit;margin: 0;outline: 0;padding: 0;vertical-align: baseline;}
+    html{
+  font-size: 62.5%; 
+  -webkit-text-size-adjust: 100%; 
+  -ms-text-size-adjust: 100%; 
+}em{font-style:italic;}
+    body{margin:0;padding:0;overflow-x:hidden;}
+    img{border:none;}
+    a{text-decoration: none;}
+  	#fw-container{width:100%;margin:0;padding:0;font-family:Arial, Helvetica, sans-serif;font-size:16px;border:0px solid #dbdee1;overflow:hidden;box-sizing:border-box;text-align: left;}
+    header{margin:0;padding:0;background-color:#ffffff;background-image:none;font-size:16px;}
+    header .fw-feed-title{margin:0 20px;padding:20px 0 15px 0;word-wrap:break-word;border-bottom:1px solid #dbdee1;}
+    header .fw-feed-title a:link{color:#505659;}
+    header .fw-feed-title a:hover{color:#505659;}
+    header .fw-feed-title a:visited{color:#505659;}
+	#fw-feed-items-scroll-area{background-color:#ffffff; background-image:none; width: 1px; min-width: 100%; overflow:hidden;}
+    #fw-feed-items{margin:0;padding:0; overflow:hidden;}
+	
+	#fw-feed-items .fw-feed-item{margin:0;padding:20px 0;clear:both;border-bottom: 1px dashed #CCCCCC;}
+    #fw-feed-items .fw-feed-item:hover{margin:0;padding:20px 0;clear:both;}
+	#fw-feed-items .fw-feed-item-url{display: block;overflow: hidden;}
+    #fw-feed-items .fw-feed-item-url[onclick] { cursor: pointer;}
+    
+      
+     #fw-feed-items .fw-feed-multimediaplayer {position: relative;width: 100%;padding-top: 56.25%;}
+     #fw-feed-items .fw-feed-multimediaplayer iframe {position: absolute;top: 0;right: 0;width: 100% !important;height: 100% !important;}
+     
+   	
+   	#fw-feed-items .fw-feed-item-image-module{margin:0 0 0 5px; padding:0;float:none;}
+	
+	 #fw-feed-items .fw-feed-item-image{margin:0; padding:0;width:100%;height:140px;overflow:hidden;}
+    #fw-feed-items .fw-feed-item-content-module{margin:0 0 0 5px;padding:0 0 0 5px;overflow:hidden; }
+    #fw-feed-items .fw-feed-item-title{margin:0 2px 0 0;padding:0 2px 0 0;color:#004182;line-height:1.5;font-size:16px;overflow:hidden;display:block;}
+    #fw-feed-items .fw-feed-item-description{margin:0 2px 0 0;padding:0 2px 0 0;color:#333333;word-wrap:break-word;line-height:1.5;font-size:12px;overflow: hidden;display: block;}
+    #fw-feed-items .fw-feed-item-date{margin:5px 0 0 0;padding:0;font-size:12px;;color:#505659;overflow:hidden;text-overflow:ellipsis;display:block;}
+    #fw-feed-items .fw-feed-item-link{margin:0;padding:0;font-size:12px;color:#505659;overflow:hidden;text-overflow:ellipsis;display:block;}
+   
+   </style>	
+	
+
+<script>
+function getQueryVariable(variable) {
+	var query = window.location.search.substring(1);
+	var vars = query.split("&");
+	for (var i=0;i<vars.length;i++) {
+		var pair = vars[i].split("=");
+		if(pair[0] == variable){return pair[1];}
+	}
+	return(false);
+}
+var domain = getQueryVariable("url");
+var colortitle = getQueryVariable("colortitle");
+var colordesc = getQueryVariable("colordesc");
+var colorback = getQueryVariable("back");
+var desc = getQueryVariable("item");
+var styles = getQueryVariable("style");
+var labels = getQueryVariable("label");
+</script>
+</head>
+<body>
+<script>
+document.write('<iframe src="https://feed.mikle.com/widget/v2/?widget_parameter=%7B%22type%22%3A%22%22%2C%22sources%22%3A%5B%7B%22source%22%3A%22http%3A%2F%2F'+domain+'%2Ffeeds%2Fposts%2Fdefault%2F-%2F'+labels+'%22%2C%22type%22%3A%22RSS%22%7D%5D%2C%22name%22%3A%22%22%2C%22width%22%3A0%2C%22height%22%3A%22700%22%2C%22height_by_article%22%3A0%2C%22target%22%3A%22_blank%22%2C%22font%22%3A%22Arial%2C%20Helvetica%2C%20sans-serif%22%2C%22title_font_size%22%3A%2216%22%2C%22item_title_font_size%22%3A%2216%22%2C%22item_description_font_size%22%3A%2214%22%2C%22border%22%3A%22off%22%2C%22css_url%22%3A%22https%3A%2F%2Fcdn.rawgit.com%2FLuis-Chavez%2Fstyle-related-post%2F308d0e7f%2F.css%22%2C%22responsive%22%3A%22on%22%2C%22text_direction%22%3A%22left%22%2C%22text_alignment%22%3A%22left%22%2C%22corner%22%3A%22square%22%2C%22scroll%22%3A%22on%22%2C%22auto_scroll%22%3A%22on%22%2C%22auto_scroll_direction%22%3A%22up%22%2C%22auto_scroll_step_speed%22%3A%224%22%2C%22auto_scroll_mc_speed%22%3A%2220%22%2C%22sort%22%3A%22rnd%22%2C%22title%22%3A%22off%22%2C%22title_sentence%22%3A%22%22%2C%22title_link%22%3A%22%22%2C%22title_bgcolor%22%3A%22%23ffffff%22%2C%22title_color%22%3A%22%23505659%22%2C%22title_bgimage%22%3A%22%22%2C%22item_bgcolor%22%3A%22%23ffffff%22%2C%22item_bgimage%22%3A%22%22%2C%22item_title_length%22%3A%22200%22%2C%22item_title_color%22%3A%22%23222222%22%2C%22item_border_bottom%22%3A%22on%22%2C%22item_description%22%3A%22title_only%22%2C%22item_link%22%3A%22off%22%2C%22item_description_length%22%3A%22150%22%2C%22item_description_color%22%3A%22%23505659%22%2C%22item_date%22%3A%22off%22%2C%22item_date_format%22%3A%22%25b%20%25e%2C%20%25Y%20%25k%3A%25M%22%2C%22item_date_timezone%22%3A%22%22%2C%22item_description_style%22%3A%22thumbnail%22%2C%22item_thumbnail%22%3A%22crop%22%2C%22item_thumbnail_selection%22%3A%22auto%22%2C%22article_num%22%3A%229999%22%2C%22item_player%22%3A%22youtube%22%2C%22keyword_inc%22%3A%22%22%2C%22keyword_exc%22%3A%22%22%7D" scrolling="no" style="width:100%;height:620px;overflow:hidden;"/>');
+	
+	</script>
+</body>
+</html>
